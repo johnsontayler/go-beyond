@@ -124,6 +124,46 @@ p {
   margin-right: 0;
 }
 
+.title-left {
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 7.2rem;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+}
+
+.menu-card-title-white > .title {
+  position: relative;
+  animation: drive-in 1.5s linear 1;
+}
+
+.title-left > span:nth-child(1) {
+  letter-spacing: 5rem;
+}
+
+.title-left > span:nth-child(5) {
+  letter-spacing: 5.5rem;
+}
+
+.title-left > span:nth-child(2) {
+  color: black;
+  font-family: "Sanchez", serif;
+  position: absolute;
+  animation: spin-wheels 0.3s linear 10;
+  font-weight: bolder;
+  top: 3.5rem;
+}
+
+.title-left > span:nth-child(6) {
+  color: black;
+  font-family: "Sanchez", serif;
+  position: absolute;
+  animation: spin-wheels 0.3s linear 10;
+  font-weight: bolder;
+  top: 20.5rem;
+}
+
 .section-right > .menu-card-title-white > .title > .title-left {
   text-align: left;
 }
@@ -138,7 +178,7 @@ p {
   grid-row: 5 / span 3;
   padding-left: 4.7rem;
   padding-right: 4.7rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
   color: rgb(87, 157, 117);
 }
 
@@ -171,7 +211,7 @@ p {
   text-align: right;
 }
 
-@keyframes spin {
+@keyframes spin-wheels {
   0% {
     transform: rotateZ(0);
   }
@@ -180,6 +220,11 @@ p {
   }
 }
 
-.letter-o {
-  /* animation: spin 0.5s linear infinite; */
+@keyframes drive-in {
+  0% {
+    bottom: -130vh;
+  }
+  100% {
+    bottom: 0;
+  }
 }
