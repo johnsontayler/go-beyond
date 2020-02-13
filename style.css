@@ -22,7 +22,7 @@ p {
 }
 
 .grid-container {
-  height: 120vh;
+  height: 100vh;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 4fr);
@@ -35,12 +35,24 @@ p {
   grid-row: 1 / -1;
   text-align: center;
   color: white;
+  overflow: hidden;
 }
 
 .section-right {
   display: grid;
   grid-column: 2 / span 2;
   grid-row: 1 / -1;
+  overflow: hidden;
+}
+
+.section-left::-webkit-scrollbar,
+.section-right::-webkit-scrollbar {
+  display: none;
+}
+
+.section-left:hover,
+.section-right:hover {
+  overflow-y: scroll;
 }
 
 .section-left > .menu-card-bowls-green {
