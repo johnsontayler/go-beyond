@@ -6,18 +6,18 @@ body {
 h1 {
   font-family: "Fjalla One", sans-serif;
   letter-spacing: 0.2rem;
-  font-size: 1.8rem;
+  font-size: 3.5rem;
 }
 
 h3 {
   font-family: "Sanchez", serif;
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   letter-spacing: 0.1rem;
 }
 
 p {
   font-family: "Work Sans", sans-serif;
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   opacity: 0.4;
 }
 
@@ -30,19 +30,20 @@ p {
 }
 
 .section-left {
-  display: grid;
   grid-column: 1 / span 1;
   grid-row: 1 / -1;
   text-align: center;
   color: white;
+  display: grid;
   overflow: hidden;
 }
 
 .section-right {
-  display: grid;
   grid-column: 2 / span 2;
   grid-row: 1 / -1;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 4fr);
 }
 
 .section-left::-webkit-scrollbar,
@@ -58,125 +59,127 @@ p {
 .section-left > .menu-card-bowls-green {
   background-color: rgb(87, 157, 117);
   grid-row: 1 / span 3;
-  padding: 0.7rem;
+  padding: 2rem;
 }
 
 .section-left > .menu-card-bowls-yellow {
   background-color: rgb(246, 193, 117);
   grid-row: 4 / span 1;
-  padding: 0.7rem;
+  padding: 2rem;
 }
 
 .section-left > .menu-card-sides-green {
   background-color: rgb(87, 157, 117);
   grid-row: 5 / span 4;
-  padding: 0.7rem;
+  padding: 2rem;
 }
 
-.section-right > .top {
-  display: grid;
-  grid-row: 1 / span 4;
-}
-
-.section-right > .bottom {
-  grid-row: 5 / span 4;
-  grid-column: 1 / span 2;
-  display: grid;
-  color: rgb(87, 157, 117);
-}
-
-.section-right > .top > .left {
-  grid-column: 1 / span 1;
-  display: grid;
-  text-align: center;
-  color: white;
-}
-
-.section-right > .top > .right {
-  grid-column: 2 / span 1;
-  display: grid;
-  color: rgb(87, 157, 117);
-}
-
-.section-right > .bottom > .menu-card-title-white {
-  background-color: white;
-  grid-row: 1 / span 3;
-  padding: 0.7rem;
-}
-
-.section-right > .bottom > .menu-card-subtitle-white {
-  background-color: white;
-  grid-row: 4 / span 1;
-  padding: 0.7rem;
-  text-align: center;
-}
-
-.section-right > .bottom > .menu-card-title-white > .title {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  height: 80%;
-}
-
-.section-right > .bottom > .menu-card-title-white > .title > h1 {
-  font-size: 4.2rem;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.section-right > .bottom > .menu-card-title-white > .title > .title-left {
-  text-align: left;
-}
-
-.section-right > .bottom > .menu-card-title-white > .title > .title-right {
-  text-align: right;
-}
-
-.section-right > .top > .left > .menu-card-more-blue {
+.section-right > .menu-card-more-blue {
   background-color: rgb(76, 180, 167);
+  grid-column: 1 / span 1;
   grid-row: 1 / span 2;
-  padding: 0.7rem;
-}
-
-.section-right > .top > .left > .menu-card-more-pink {
-  background-color: rgb(254, 127, 133);
-  grid-row: 3 / span 2;
-  padding: 0.7rem;
-}
-
-.section-right > .top > .right > .menu-card-title-white {
-  background-color: white;
-  grid-row: 1 / span 3;
-  padding: 0.7rem;
-}
-
-.section-right > .top > .right > .menu-card-subtitle-white {
-  background-color: white;
-  grid-row: 4 / span 1;
-  padding: 0.7rem;
+  padding: 2rem;
+  color: white;
   text-align: center;
 }
 
-.section-right > .top > .right > .menu-card-title-white > .title {
+.section-right > .menu-card-more-pink {
+  background-color: rgb(254, 127, 133);
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 2;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.section-right > .menu-card-title-white {
+  background-color: white;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 3;
+  padding-top: 2rem;
+  color: rgb(87, 157, 117);
+  display: flex;
+  justify-content: center;
+}
+
+.section-right > .menu-card-subtitle-white {
+  background-color: white;
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+  padding: 4.7rem;
+  text-align: center;
+  color: rgb(87, 157, 117);
+}
+
+.section-right > .menu-card-title-white > .title {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  height: 85%;
+  width: 50%;
+}
+
+.section-right > .menu-card-title-white > .title > h1 {
+  font-size: 7.2rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.section-right > .menu-card-title-white > .title > .title-left {
+  text-align: left;
+}
+
+.section-right > .menu-card-title-white > .title > .title-right {
+  text-align: right;
+}
+
+.section-right > .bottom-menu-card-title-white {
+  background-color: white;
+  grid-column: 1 / span 2;
+  grid-row: 5 / span 3;
+  padding-left: 4.7rem;
+  padding-right: 4.7rem;
+  padding-top: 1rem;
+  color: rgb(87, 157, 117);
+}
+
+.section-right > .bottom-menu-card-subtitle-white {
+  background-color: white;
+  grid-column: 1 / span 2;
+  grid-row: 8 / span 1;
+  padding: 4.7rem;
+  text-align: center;
+  color: rgb(87, 157, 117);
+}
+
+.section-right > .bottom-menu-card-title-white > .title {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   height: 80%;
 }
 
-.section-right > .top > .right > .menu-card-title-white > .title > h1 {
-  font-size: 4.2rem;
+.section-right > .bottom-menu-card-title-white > .title > h1 {
+  font-size: 7.2rem;
   margin-left: 0;
   margin-right: 0;
 }
 
-.section-right > .top > .right > .menu-card-title-white > .title > .title-left {
+.section-right > .bottom-menu-card-title-white > .title > .title-left {
   text-align: left;
 }
 
-.section-right
-  > .top
-  > .right
-  > .menu-card-title-white
-  > .title
-  > .title-right {
+.section-right > .bottom-menu-card-title-white > .title > .title-right {
   text-align: right;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.letter-o {
+  /* animation: spin 0.5s linear infinite; */
 }
