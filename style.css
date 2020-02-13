@@ -3,8 +3,26 @@ body {
   padding: 0;
 }
 
+h1 {
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-family: "Sanchez", serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.7rem;
+  opacity: 0.4;
+}
+
 .grid-container {
-  height: 200vh;
+  height: 120vh;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 4fr);
@@ -15,21 +33,26 @@ body {
   display: grid;
   grid-column: 1 / span 1;
   grid-row: 1 / -1;
+  text-align: center;
+  color: white;
 }
 
 .section-left > .menu-card-bowls-green {
   background-color: rgb(87, 157, 117);
   grid-row: 1 / span 3;
+  padding: 0.7rem;
 }
 
 .section-left > .menu-card-bowls-yellow {
   background-color: rgb(246, 193, 117);
   grid-row: 4 / span 1;
+  padding: 0.7rem;
 }
 
 .section-left > .menu-card-sides-green {
   background-color: rgb(87, 157, 117);
   grid-row: 5 / span 4;
+  padding: 0.7rem;
 }
 
 .section-right {
@@ -46,16 +69,20 @@ body {
 .section-right > .top > .left {
   display: grid;
   grid-column: 1 / span 1;
+  text-align: center;
+  color: white;
 }
 
 .section-right > .top > .left > .menu-card-more-blue {
   background-color: rgb(76, 180, 167);
   grid-row: 1 / span 2;
+  padding: 0.7rem;
 }
 
 .section-right > .top > .left > .menu-card-more-pink {
   background-color: rgb(254, 127, 133);
   grid-row: 3 / span 2;
+  padding: 0.7rem;
 }
 
 .section-right > .top > .right {
